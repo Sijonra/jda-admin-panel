@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### DECOMPOSITION
 
-## Getting Started
+## 1. Preparing project styles
 
-First, run the development server:
+      1.1[JDA-0101] create scss mixins/variables/normalize/
+      1.2[JDA-0102] create scss variables for theme switch
+      1.3[JDA-0103] install fonts
+      1.4[JDA-0104] create admin panel main page
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 2. Header / Footer layout
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+      2.1[JDA-0201] create header layout (responsive) for light theme
+      2.2[JDA-0202] create header layout (responsive) for dark theme
+      2.1[JDA-0203] create footer layout (responsive) for light theme
+      2.3[JDA-0204] create footer layout (responsive) for dark theme
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 3. SideBar layout
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+      3.1[JDA-0301] create sideBarComponent basic layout
+      3.2[JDA-0302] create sidebar item component
+      3.3[JDA-0303] create sidebar subItem component
+      3.4[JDA-0304] create sidebar layout for light/dark themes
+      3.5[JDA-0305] make sidebar responsive (burger button in header) 
 
-## Learn More
+## 4. Section Ecommerce Dashboard layout
 
-To learn more about Next.js, take a look at the following resources:
+      4.1[JDA-0401] sorting posts by chosen author
+      4.2[JDA-0402] sorting posts by search bar using regExp
+      4.3[JDA-0403] create debounce function for search request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 5. Section Latest reviews layout
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+      5.1[JDA-0501] add checkbox and "No Posts" message to post page
+      5.2[JDA-0502] styling posts page
 
-## Deploy on Vercel
+## 6. Section Top regions by revenue layout
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 7. Section Projection vs actual layout
