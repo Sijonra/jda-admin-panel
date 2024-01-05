@@ -6,13 +6,9 @@ interface IThemeState {
 }
 
 const useTheme = create<IThemeState>((set) => ({
-	theme: (localStorage.getItem('theme') as 'dark' | 'light') || 'dark',
+	theme: 'dark',
 	changeTheme: () =>
-		set((state) => {
-			const newTheme = state.theme === 'light' ? 'dark' : 'light';
-			localStorage.setItem('theme', newTheme);
-			return { theme: newTheme };
-		}),
+		set((state) => ({ theme: state.theme === 'light' ? 'dark' : 'light' })),
 }));
 
 export default useTheme;
