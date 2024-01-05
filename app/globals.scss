@@ -368,3 +368,8 @@ button {
 * {
 	box-sizing: border-box;
 }
+
+body {
+	background-color: var(--phoenix-body-bg);
+	color: var(--phoenix-body-color);
+}
