@@ -7,7 +7,7 @@ const cx = classNames.bind(style);
 export default function Home() {
 	return (
 		<main>
-			<p className={style.title}>Hello World</p>
+			<p className={style.title}>phoenix</p>
 		</main>
 	);
 }
