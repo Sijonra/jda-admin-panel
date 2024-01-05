@@ -1,3 +1,5 @@
+'use client';
+
 import React, { FC } from 'react';
 import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
@@ -11,6 +13,9 @@ const Header: FC = () => {
 	return (
 		<header className={cx('header')}>
 			<div className={cx('header-logo')}>
+				<span className={cx('header-burger')}>
+					<span className={cx('header-burger__item')}></span>
+				</span>
 				<Image
 					src={PNG_Logo}
 					className={cx('header-logo__img')}
@@ -46,9 +51,9 @@ const Header: FC = () => {
 							viewBox='0 0 24 24'
 							fill='none'
 							stroke='currentColor'
-							stroke-width='2'
-							stroke-linecap='round'
-							stroke-linejoin='round'>
+							strokeWidth='2'
+							strokeLinecap='round'
+							strokeLinejoin='round'>
 							<path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'></path>
 						</svg>
 					</a>
@@ -62,9 +67,9 @@ const Header: FC = () => {
 							viewBox='0 0 24 24'
 							fill='none'
 							stroke='currentColor'
-							stroke-width='2'
-							stroke-linecap='round'
-							stroke-linejoin='round'>
+							strokeWidth='2'
+							strokeLinecap='round'
+							strokeLinejoin='round'>
 							<path d='M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9'></path>
 							<path d='M13.73 21a2 2 0 0 1-3.46 0'></path>
 						</svg>
