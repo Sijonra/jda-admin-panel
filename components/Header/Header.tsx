@@ -1,15 +1,25 @@
 'use client';
 
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
 import Image from 'next/image';
 import PNG_Logo from '@/public/assets/headerImg/logo.png';
 import WEBP_AVATAR from '@/public/assets/headerImg/avatar.webp';
+import useTheme from '@/hooks/useTheme';
 
 const cx = classNames.bind(styles);
 
 const Header: FC = () => {
+	const theme = useTheme((state) => state.theme);
+
+	useEffect(() => {
+		console.log(theme);
+		document.documentElement.setAttribute('data-theme', theme);
+	}, [theme]);
+
+	const onThemeChange = useTheme((state) => state.changeTheme);
+
 	return (
 		<header className={cx('header')}>
 			<div className={cx('header-logo')}>
@@ -42,7 +52,9 @@ const Header: FC = () => {
 				</svg>
 			</div>
 			<ul className={cx('header-icons')}>
-				<li className={cx('header-icons__item', 'header-icons__theme')}>
+				<li
+					onClick={onThemeChange}
+					className={cx('header-icons__item', 'header-icons__theme')}>
 					<a href='/#'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
