@@ -9,10 +9,9 @@
 
 ## 2. Header / Footer layout
 
-      2.1[JDA-0201] create header layout (responsive) for light theme
-      2.2[JDA-0202] create header layout (responsive) for dark theme
-      2.1[JDA-0203] create footer layout (responsive) for light theme
-      2.3[JDA-0204] create footer layout (responsive) for dark theme
+      2.1[JDA-0201] create header layout (responsive)
+      2.1[JDA-0202] create footer layout (responsive)
+      2.3[JDA-0203] crete theme switch using zustand state
 
 ## 3. SideBar layout
 
@@ -20,7 +19,7 @@
       3.2[JDA-0302] create sidebar item component
       3.3[JDA-0303] create sidebar subItem component
       3.4[JDA-0304] create sidebar layout for light/dark themes
-      3.5[JDA-0305] make sidebar responsive (burger button in header) 
+      3.5[JDA-0305] make sidebar responsive (burger button in header)
 
 ## 4. Section Ecommerce Dashboard layout
 
