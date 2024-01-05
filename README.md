@@ -10,8 +10,8 @@
 ## 2. Header / Footer layout
 
       2.1[JDA-0201] create header layout (responsive)
-      2.1[JDA-0202] create footer layout (responsive)
-      2.3[JDA-0203] crete theme switch using zustand state
+      2.3[JDA-0202] crete theme switch using zustand state
+      2.1[JDA-0203] create footer layout (responsive)
 
 ## 3. SideBar layout
 
