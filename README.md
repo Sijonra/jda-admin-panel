@@ -19,7 +19,6 @@
       3.2[JDA-0302] create sidebar item component
       3.3[JDA-0303] create sidebar subItem component
       3.4[JDA-0304] create sidebar layout for light/dark themes
-      3.5[JDA-0305] make sidebar responsive (burger button in header)
 
 ## 4. Section Ecommerce Dashboard layout
 
