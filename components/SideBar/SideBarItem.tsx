@@ -62,6 +62,8 @@ const SideBarItem: FC<ISideBarItem> = ({ title, withArrow, icon, subItems }) => 
 								title={subItem.title}
 								withArrow={subItem.arrow}
 								content={subItem.content}
+								labelNew={subItem.labelNew}
+								labelActive={subItem.labelActive}
 							/>
 						);
 					})}

@@ -3,6 +3,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import styles from './SideBarSubItem.module.scss';
 import classNames from 'classnames/bind';
+import LabelNew from '../common/LabelNew';
 
 const cx = classNames.bind(styles);
 
@@ -10,9 +11,17 @@ interface ISideBarSubItem {
 	title: string;
 	withArrow: boolean;
 	content?: string[];
+	labelActive?: boolean;
+	labelNew?: boolean;
 }
 
-const SideBarSubItem: FC<ISideBarSubItem> = ({ title, withArrow, content }) => {
+const SideBarSubItem: FC<ISideBarSubItem> = ({
+	title,
+	withArrow,
+	content,
+	labelActive,
+	labelNew,
+}) => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 	useEffect(() => {
 		console.log(isOpen);
@@ -38,6 +47,10 @@ const SideBarSubItem: FC<ISideBarSubItem> = ({ title, withArrow, content }) => {
 					</svg>
 				)}
 				<div className={cx('sub-item__title')}>{title}</div>
+				{labelNew && <LabelNew />}
+				{labelActive && (
+					<span className={cx('sub-item__label--active')}>active</span>
+				)}
 			</div>
 			{isOpen && (
 				<div className={cx('sub-item__sub-items')}>

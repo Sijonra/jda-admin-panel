@@ -4,6 +4,8 @@ export type TItem = {
 	title: string;
 	svg: any;
 	subItems?: TSubItem[] | false;
+	labelActive?: boolean;
+	labelNew?: boolean;
 };
 
 export type TSubItem = {
@@ -11,4 +13,6 @@ export type TSubItem = {
 	title: string;
 	arrow: boolean;
 	content?: string[];
+	labelActive?: boolean;
+	labelNew?: boolean;
 };

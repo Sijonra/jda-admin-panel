@@ -1,5 +1,9 @@
+@import '../../styles/bundle.scss';
+
 .sub-item {
 	position: relative;
+	display: flex;
+	align-items: center;
 	padding: 5px 16px 5px 53px;
 	width: 223px;
 	margin-left: 0.75rem;
@@ -9,6 +13,7 @@
 	line-height: 1.188rem;
 	color: var(--phoenix-navbar-vertical-link-color);
 	cursor: pointer;
+	@include font;
 
 	&__arrow {
 		position: absolute;
@@ -29,6 +34,7 @@
 	}
 
 	&__sub-item {
+		position: relative;
 		width: 223px;
 		padding: 5px 16px 5px 53px;
 		margin-left: 3rem;
@@ -42,6 +48,7 @@
 		line-height: 1.188rem;
 		color: var(--phoenix-navbar-vertical-link-color);
 		cursor: pointer;
+		@include font;
 
 		&:hover {
 			background-color: var(--phoenix-navbar-vertical-link-hover-bg);

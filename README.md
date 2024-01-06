@@ -18,7 +18,7 @@
       3.1[JDA-0301] create sideBarComponent basic layout
       3.2[JDA-0302] create sidebar item component
       3.3[JDA-0303] create sidebar subItem component
-      3.4[JDA-0304] create sidebar layout for light/dark themes
+      3.4[JDA-0304] create sidebar custom scrollBar
 
 ## 4. Section Ecommerce Dashboard layout
 

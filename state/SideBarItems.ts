@@ -1,13 +1,18 @@
 import { TItem } from '@/types/types';
 import { create } from 'zustand';
 import SVG__HomeIcon from '@/public/assets/sideBarIcons/homeIcon.svg';
+import SVG__Cart from '@/public/assets/sideBarIcons/cart.svg';
 
 interface ISideBarItems {
-	items: TItem[];
+	itemsHome: TItem[];
+	itemsApps: TItem[];
+	// itemsPages: TItem[];
+	// itemsModules: TItem[];
+	// itemsDocumentation: TItem[];
 }
 
 const sideBarItems = create<ISideBarItems>((set) => ({
-	items: [
+	itemsHome: [
 		{
 			id: 0,
 			arrow: true,
@@ -28,6 +33,7 @@ const sideBarItems = create<ISideBarItems>((set) => ({
 					id: 2,
 					title: 'CRM',
 					arrow: false,
+					labelNew: true,
 				},
 				{
 					id: 3,
@@ -36,11 +42,13 @@ const sideBarItems = create<ISideBarItems>((set) => ({
 				},
 			],
 		},
+	],
+	itemsApps: [
 		{
-			id: 1,
+			id: 0,
 			arrow: true,
 			title: 'E Commerce',
-			svg: SVG__HomeIcon,
+			svg: SVG__Cart,
 			subItems: [
 				{
 					id: 0,

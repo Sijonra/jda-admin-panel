@@ -27,6 +27,17 @@
 
 	&-list {
 		@include list-reset;
+
+		&__label {
+			display: block;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 0.64rem;
+			color: var(--phoenix-navbar-vertical-label-color);
+			margin-bottom: 0.5rem;
+			margin-top: 1.5rem;
+			padding-left: 2rem;
+		}
 	}
 
 	@media (max-width: 990px) {
