@@ -75,29 +75,3 @@
 		height: auto;
 	}
 }
-
-.sidebar-item-content {
-	&__item {
-		padding: 5px 16px 5px 53px;
-		width: 223px;
-		margin-left: 0.75rem;
-		margin-right: 0.75rem;
-		border-radius: 0.5rem;
-		word-break: break-word;
-		line-height: 1.188rem;
-		color: var(--phoenix-navbar-vertical-link-color);
-		cursor: pointer;
-
-		span {
-			margin-left: 12px;
-			font-size: 13px;
-			font-weight: 600;
-			word-break: break-word;
-			line-height: 1.188rem;
-		}
-
-		&:hover {
-			background-color: var(--phoenix-navbar-vertical-link-hover-bg);
-		}
-	}
-}
