@@ -7,6 +7,7 @@ import Image from 'next/image';
 import PNG_Logo from '@/public/assets/headerImg/logo.png';
 import WEBP_AVATAR from '@/public/assets/headerImg/avatar.webp';
 import useTheme from '@/hooks/useTheme';
+import useSidebar from '@/hooks/useSidebar';
 
 const cx = classNames.bind(styles);
 
@@ -18,11 +19,12 @@ const Header: FC = () => {
 	}, [theme]);
 
 	const onThemeChange = useTheme((state) => state.changeTheme);
+	const toggleSideBar = useSidebar((state) => state.toggleSideBar);
 
 	return (
 		<header className={cx('header')}>
 			<div className={cx('header-logo')}>
-				<span className={cx('header-burger')}>
+				<span onClick={toggleSideBar} className={cx('header-burger')}>
 					<span className={cx('header-burger__item')}></span>
 				</span>
 				<Image
