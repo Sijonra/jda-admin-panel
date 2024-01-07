@@ -5,7 +5,6 @@ import styles from './SideBar.module.scss';
 import classNames from 'classnames/bind';
 import useSidebar from '@/hooks/useSidebar';
 import SideBarItem from './SideBarItem';
-import SVG__HomeIcon from '@/public/assets/sideBarIcons/homeIcon.svg';
 import sideBarItems from '@/state/SideBarItems';
 
 const cx = classNames.bind(styles);
