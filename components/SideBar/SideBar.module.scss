@@ -1,22 +1,43 @@
 @import '../../styles/bundle.scss';
 
 .sidebar {
+	position: fixed;
+	top: $phoenix-navbar-top-height;
+	display: inline-block;
 	width: 15.875rem;
-	border-right: 1px solid var(--phoenix-navbar-vertical-border-color);
-	height: calc(100vh - $phoenix-navbar-top-height);
-	background: var(--phoenix-navbar-vertical-bg-color);
 	z-index: 100;
-	transition: width 0.2s ease;
+	height: calc(100vh - $phoenix-navbar-top-height);
+	border-right: 1px solid var(--phoenix-navbar-vertical-border-color);
+	background: var(--phoenix-navbar-vertical-bg-color);
+	transition: all 0.4s ease;
 
 	&-nav {
 		width: 100%;
 		height: calc(100vh - $phoenix-navbar-top-height - 4rem);
+		max-height: calc(100vh - $phoenix-navbar-top-height);
+		padding: 16px 0;
 		overflow: auto;
+		overflow-x: hidden;
 	}
 
 	&-collapse {
 		@media (max-width: 990px) {
 			display: none;
+		}
+	}
+
+	&-list {
+		@include list-reset;
+
+		&__label {
+			display: block;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 0.64rem;
+			color: var(--phoenix-navbar-vertical-label-color);
+			margin-bottom: 0.5rem;
+			margin-top: 1.5rem;
+			padding-left: 2rem;
 		}
 	}
 
