@@ -19,6 +19,7 @@
       3.2[JDA-0302] create sidebar/subItem item component
       3.3[JDA-0303] create sidebar custom scrollBar
       3.4[JDA-0304] make sidebar collapse function
+      3.5[JDA-0305] final navbar styling (pixel perfect)
 
 ## 4. Section Ecommerce Dashboard layout
 
