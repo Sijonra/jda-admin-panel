@@ -11,7 +11,6 @@ const cx = classNames.bind(styles);
 const Ecommerce: FC = () => {
 	return (
 		<section className={cx('ecommerce')}>
-			Ecommerce Dashboard
 			<EcommerceSells />
 			<EcommerceCharts />
 		</section>
