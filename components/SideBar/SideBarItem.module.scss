@@ -22,6 +22,17 @@
 		background-color: var(--phoenix-navbar-vertical-link-hover-bg);
 	}
 
+	&--collapse {
+		margin-left: 0;
+		padding: 0;
+		.sidebar-item__arrow {
+			display: none;
+		}
+		.sidebar-item__title {
+			display: none;
+		}
+	}
+
 	cursor: pointer;
 	&__arrow {
 		visibility: hidden;
@@ -70,14 +81,12 @@
 .sidebar-item__content {
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity 0.1s ease-out, visibility 1s ease-out;
+	transition: all 0.3s ease;
 	height: 0;
 
 	&--active {
 		opacity: 1;
 		visibility: visible;
-		height: auto;
-		opacity: 1;
 		height: auto;
 	}
 }
