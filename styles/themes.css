@@ -193,7 +193,6 @@ html[data-theme='dark']{
 
 
 
-
     --phoenix-badge-bg: rgba(var(--phoenix-info-rgb), 0.08);
     --phoenix-badge-color: #60c6ff;
     --phoenix-badge-border-color: rgba( var(--phoenix-info-rgb), 0.2 );
@@ -457,6 +456,8 @@ html[data-theme='light']{
     --phoenix-ghost-bg: var(--phoenix-gray-100);
     --phoenix-drag-bg: var(--phoenix-white);
     --phoenix-kanban-column-hover-bg: var(--phoenix-white);
+
+	--bs-scrollbar-bg: #CACEDA;
 
 	--phoenix-badge-bg: rgba(var(--phoenix-info-rgb), 0.08);
     --phoenix-badge-color: #60c6ff;
