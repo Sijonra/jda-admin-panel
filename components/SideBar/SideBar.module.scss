@@ -17,6 +17,7 @@
 		max-height: calc(100vh - $phoenix-navbar-top-height);
 		padding: 16px 0;
 		overflow: auto;
+		overflow-x: hidden;
 	}
 
 	&-collapse {

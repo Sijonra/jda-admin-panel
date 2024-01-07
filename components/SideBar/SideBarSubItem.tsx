@@ -24,9 +24,6 @@ const SideBarSubItem: FC<ISideBarSubItem> = ({
 	labelNew,
 }) => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
-	useEffect(() => {
-		console.log(isOpen);
-	}, [isOpen]);
 	const handleActive = () => setIsOpen(!isOpen);
 	return (
 		<>
