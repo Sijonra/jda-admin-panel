@@ -6,6 +6,7 @@ import classNames from 'classnames/bind';
 import useSidebar from '@/hooks/useSidebar';
 import SideBarItem from './SideBarItem';
 import sideBarItems from '@/state/SideBarItems';
+import useSideBarCollapse from '@/hooks/useSidebarCollapse';
 
 const cx = classNames.bind(styles);
 
@@ -15,10 +16,19 @@ const SideBar: FC = () => {
 	const itemsPages = sideBarItems((state) => state.itemsPages);
 	const itemsModules = sideBarItems((state) => state.itemsModules);
 	const itemsDocumentation = sideBarItems((state) => state.itemsDocumentation);
+
 	const isSideBarActive = useSidebar((state) => state.isActive);
 
+	const collapseOpen = useSideBarCollapse((state) => state.isOpen);
+	const toogleColapse = useSideBarCollapse((state) => state.toggleScrollBarCollapse);
+
 	return (
-		<aside className={cx('sidebar', isSideBarActive ? 'sidebar--show' : '')}>
+		<aside
+			className={cx(
+				'sidebar',
+				isSideBarActive && 'sidebar--show',
+				!collapseOpen && 'sidebar--collapse'
+			)}>
 			<nav className={cx('sidebar-nav')}>
 				<ul className={cx('sidebar-list', 'sidebar__list--home')}>
 					{itemsHome.map((item) => {
@@ -103,7 +113,11 @@ const SideBar: FC = () => {
 					})}
 				</ul>
 			</nav>
-			<div className={cx('sidebar-collapse')}>collapse</div>
+			<div className={cx('sidebar-collapse')} onClick={toogleColapse}>
+				<p>
+					<span>Collapsed View</span>{' '}
+				</p>
+			</div>
 		</aside>
 	);
 };

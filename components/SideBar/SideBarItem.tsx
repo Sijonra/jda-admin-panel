@@ -8,6 +8,7 @@ import { TSubItem } from '@/types/types';
 import Image from 'next/image';
 import LabelActive from '../common/LabelActive';
 import LabelNew from '../common/LabelNew';
+import useSideBarCollapse from '@/hooks/useSidebarCollapse';
 
 const cx = classNames.bind(styles);
 
@@ -29,14 +30,19 @@ const SideBarItem: FC<ISideBarItem> = ({
 	labelNew,
 }) => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
-
 	const handleActive = () => setIsOpen(!isOpen);
+
+	const collapseOpen = useSideBarCollapse((state) => state.isOpen);
 
 	return (
 		<>
 			<div
 				onClick={handleActive}
-				className={cx('sidebar-item', isOpen ? 'sidebar-item--active' : '')}>
+				className={cx(
+					'sidebar-item',
+					isOpen && 'sidebar-item--active',
+					!collapseOpen && 'sidebar-item--collapse'
+				)}>
 				<svg
 					aria-hidden='true'
 					focusable='false'
