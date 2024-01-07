@@ -23,9 +23,10 @@
 
 ## 4. Section Ecommerce Dashboard layout
 
-      4.1[JDA-0401] sorting posts by chosen author
-      4.2[JDA-0402] sorting posts by search bar using regExp
-      4.3[JDA-0403] create debounce function for search request
+      4.1[JDA-0401] create basic Ecommerce section layout
+      4.2[JDA-0402] YourBusiness block layout
+      4.3[JDA-0403] TotalSales block layout
+      4.4[JDA-0404] Graphics block layout
 
 ## 5. Section Latest reviews layout
 
@@ -34,4 +35,4 @@
 
 ## 6. Section Top regions by revenue layout
 
-## 7. Section Projection vs actual layout
+## 7. Section porojection/returning graphics
