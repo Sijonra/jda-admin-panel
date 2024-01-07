@@ -42,6 +42,8 @@ const SideBar: FC = () => {
 									subItems={item.subItems}
 									withArrow={item.arrow}
 									icon={item.svg}
+									labelNew={item.labelNew}
+									labelActive={item.labelActive}
 								/>
 							</li>
 						);

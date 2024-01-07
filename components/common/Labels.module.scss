@@ -12,3 +12,11 @@
 	font-weight: 700;
 	@include font;
 }
+
+.label-active {
+	margin-left: 4px;
+	margin-bottom: 27px;
+	width: 6px;
+	height: 6px;
+	color: rgba(var(--phoenix-info-rgb));
+}

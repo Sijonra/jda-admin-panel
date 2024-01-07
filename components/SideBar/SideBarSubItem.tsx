@@ -4,6 +4,7 @@ import React, { FC, useEffect, useState } from 'react';
 import styles from './SideBarSubItem.module.scss';
 import classNames from 'classnames/bind';
 import LabelNew from '../common/LabelNew';
+import LabelActive from '../common/LabelActive';
 
 const cx = classNames.bind(styles);
 
@@ -48,9 +49,7 @@ const SideBarSubItem: FC<ISideBarSubItem> = ({
 				)}
 				<div className={cx('sub-item__title')}>{title}</div>
 				{labelNew && <LabelNew />}
-				{labelActive && (
-					<span className={cx('sub-item__label--active')}>active</span>
-				)}
+				{labelActive && <LabelActive />}
 			</div>
 			{isOpen && (
 				<div className={cx('sub-item__sub-items')}>

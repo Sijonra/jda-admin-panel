@@ -23,11 +23,16 @@
 
 	cursor: pointer;
 	&__arrow {
+		visibility: hidden;
 		width: 5px;
 		height: 10px;
 		color: var(--phoenix-navbar-vertical-dropdown-indicator-color);
 		margin-right: 6px;
 		transition: all 0.4s ease;
+
+		&--active {
+			visibility: visible;
+		}
 	}
 
 	&__icon {
