@@ -16,9 +16,9 @@ interface ISideBarItem {
 	title: string;
 	withArrow: boolean;
 	icon: any;
-	subItems: TSubItem[] | false;
-	labelActive: boolean;
-	labelNew: boolean;
+	subItems: any;
+	labelActive: any;
+	labelNew: any;
 }
 
 const SideBarItem: FC<ISideBarItem> = ({
@@ -74,18 +74,27 @@ const SideBarItem: FC<ISideBarItem> = ({
 					isOpen ? 'sidebar-item__content--active' : ''
 				)}>
 				{subItems &&
-					subItems.map((subItem) => {
-						return (
-							<SideBarSubItem
-								key={subItem.id}
-								title={subItem.title}
-								withArrow={subItem.arrow}
-								content={subItem.content}
-								labelNew={subItem.labelNew}
-								labelActive={subItem.labelActive}
-							/>
-						);
-					})}
+					subItems.map(
+						(subItem: {
+							id: React.Key | null | undefined;
+							title: string;
+							arrow: boolean;
+							content: string[] | undefined;
+							labelNew: boolean | undefined;
+							labelActive: boolean | undefined;
+						}) => {
+							return (
+								<SideBarSubItem
+									key={subItem.id}
+									title={subItem.title}
+									withArrow={subItem.arrow}
+									content={subItem.content}
+									labelNew={subItem.labelNew}
+									labelActive={subItem.labelActive}
+								/>
+							);
+						}
+					)}
 			</div>
 		</>
 	);
