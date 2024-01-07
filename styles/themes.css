@@ -182,7 +182,7 @@ html[data-theme='dark']{
     --phoenix-theme-control-toggle-hover-bg: rgba(56, 116, 255, 0.7);
     --phoenix-theme-control-toggle-color: #85a9ff;
     --phoenix-theme-control-toggle-hover-color: #f5f8ff;
-    --bs-scrollbar-bg: rgba(49, 55, 74, 0.6);
+    --bs-scrollbar-bg: #606677;
     --phoenix-kanban-bg: #0f111a;
     --phoenix-kanban-column-bg: #141824;
     --phoenix-ghost-bg: #0f111a;

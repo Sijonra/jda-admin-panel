@@ -22,11 +22,19 @@ import SVG__Widgets from '@/public/assets/sideBarIcons/widgets.svg';
 import SVG__Multilevel from '@/public/assets/sideBarIcons/multilevel.svg';
 import SVG__GettingStarted from '@/public/assets/sideBarIcons/gettingstarted.svg';
 import SVG__Customization from '@/public/assets/sideBarIcons/customization.svg';
-import SVG__Layout from '@/public/assets/sideBarIcons/layout.svg';
+import SVG__Layout from '@/public/assets/sideBarIcons/layoutdoc.svg';
 import SVG__Gulp from '@/public/assets/sideBarIcons/gulp.svg';
 import SVG__Design from '@/public/assets/sideBarIcons/designe.svg';
 import SVG__Changelog from '@/public/assets/sideBarIcons/changelog.svg';
 import SVG__Showcase from '@/public/assets/sideBarIcons/showcase.svg';
+import SVG__Landing from '@/public/assets/sideBarIcons/landing.svg';
+import SVG__Pricing from '@/public/assets/sideBarIcons/pricing.svg';
+import SVG__Notification from '@/public/assets/sideBarIcons/notifications.svg';
+import SVG__Members from '@/public/assets/sideBarIcons/members.svg';
+import SVG__Timeline from '@/public/assets/sideBarIcons/timeline.svg';
+import SVG__Errors from '@/public/assets/sideBarIcons/errors.svg';
+import SVG__Authentication from '@/public/assets/sideBarIcons/authentication.svg';
+import SVG__Layouts from '@/public/assets/sideBarIcons/layout.svg';
 
 interface ISideBarItems {
 	itemsHome: TItem[];
@@ -325,136 +333,190 @@ const sideBarItems = create<ISideBarItems>((set) => ({
 		{
 			id: 2,
 			arrow: true,
-			title: 'Project management',
-			svg: SVG__Board,
+			title: 'Landing',
+			svg: SVG__Landing,
+			labelActive: true,
 			subItems: [
 				{
 					id: 0,
-					title: 'Create new',
+					title: 'Default',
 					arrow: false,
 				},
 				{
 					id: 1,
-					title: 'Project list',
+					title: 'Alternate',
 					arrow: false,
-				},
-				{
-					id: 2,
-					title: 'Project card',
-					arrow: false,
-				},
-				{
-					id: 3,
-					title: 'Project board',
-					arrow: false,
-				},
-				{
-					id: 4,
-					title: 'Todo list',
-					arrow: false,
-				},
-				{
-					id: 5,
-					title: 'Project details',
-					arrow: false,
+					labelNew: true,
 				},
 			],
 		},
 		{
 			id: 3,
-			arrow: false,
-			title: 'Chat',
-			svg: SVG__Chat,
+			arrow: true,
+			title: 'Pricing',
+			svg: SVG__Pricing,
+			subItems: [
+				{
+					id: 0,
+					title: 'Pricing column',
+					arrow: false,
+				},
+				{
+					id: 1,
+					title: 'Pricing grid',
+					arrow: false,
+				},
+			],
 		},
 		{
 			id: 4,
-			arrow: true,
-			title: 'Email',
-			svg: SVG__Email,
-			subItems: [
-				{
-					id: 0,
-					title: 'Inbox',
-					arrow: false,
-				},
-				{
-					id: 1,
-					title: 'Email details',
-					arrow: false,
-				},
-				{
-					id: 2,
-					title: 'Compose',
-					arrow: false,
-				},
-			],
+			arrow: false,
+			title: 'Notification',
+			svg: SVG__Notification,
 		},
 		{
 			id: 5,
-			arrow: true,
-			title: 'Events',
-			svg: SVG__Events,
-			subItems: [
-				{
-					id: 0,
-					title: 'Create event',
-					arrow: false,
-				},
-				{
-					id: 1,
-					title: 'Event detail',
-					arrow: false,
-				},
-			],
+			arrow: false,
+			title: 'Members',
+			svg: SVG__Members,
 		},
 		{
 			id: 6,
-			arrow: true,
-			title: 'Kanban',
-			svg: SVG__Kanban,
-			labelActive: true,
-			subItems: [
-				{
-					id: 0,
-					title: 'Kanban',
-					arrow: false,
-				},
-				{
-					id: 1,
-					title: 'Boards',
-					labelNew: true,
-					arrow: false,
-				},
-				{
-					id: 2,
-					title: 'Create board',
-					arrow: false,
-				},
-			],
+			arrow: false,
+			title: 'Timeline',
+			svg: SVG__Timeline,
 		},
 		{
 			id: 7,
 			arrow: true,
-			title: 'Social',
-			svg: SVG__Social,
+			title: 'Errors',
+			svg: SVG__Errors,
+			labelActive: true,
 			subItems: [
 				{
 					id: 0,
-					title: 'Profile',
+					title: '404',
 					arrow: false,
 				},
 				{
 					id: 1,
-					title: 'Settings',
+					title: '403',
+					arrow: false,
+					labelNew: true,
+				},
+				{
+					id: 2,
+					title: '500',
 					arrow: false,
 				},
 			],
 		},
 		{
 			id: 8,
-			arrow: false,
-			title: 'Calendar',
-			svg: SVG__Calendar,
+			arrow: true,
+			title: 'Authentication',
+			svg: SVG__Authentication,
+			labelActive: true,
+			subItems: [
+				{
+					id: 0,
+					title: 'Simple',
+					labelActive: true,
+					arrow: true,
+					content: [
+						'Sign in',
+						'Sign up',
+						'Sign out',
+						'Forgot password',
+						'Reset password',
+						'Lock',
+						'2FA',
+					],
+				},
+				{
+					id: 1,
+					title: 'Simple',
+					labelActive: true,
+					arrow: true,
+					content: [
+						'Sign in',
+						'Sign up',
+						'Sign out',
+						'Forgot password',
+						'Reset password',
+						'Lock',
+						'2FA',
+					],
+				},
+				{
+					id: 2,
+					title: 'Simple',
+					labelActive: true,
+					arrow: true,
+					content: [
+						'Sign in',
+						'Sign up',
+						'Sign out',
+						'Forgot password',
+						'Reset password',
+						'Lock',
+						'2FA',
+					],
+				},
+			],
+		},
+		{
+			id: 9,
+			arrow: true,
+			title: 'Layouts',
+			svg: SVG__Layouts,
+			subItems: [
+				{
+					id: 0,
+					title: 'Vertical sidenav',
+					arrow: false,
+				},
+				{
+					id: 1,
+					title: 'Dark mode',
+					arrow: false,
+				},
+				{
+					id: 2,
+					title: 'Sidenav collapse',
+					arrow: false,
+				},
+				{
+					id: 3,
+					title: 'Dark nav',
+					arrow: false,
+				},
+				{
+					id: 4,
+					title: 'Top nav slim',
+					arrow: false,
+				},
+				{
+					id: 5,
+					title: 'Navbar top slim',
+					arrow: false,
+				},
+				{
+					id: 6,
+					title: 'Navbar top',
+					arrow: false,
+				},
+				{
+					id: 7,
+					title: 'Combo nav',
+					arrow: false,
+				},
+				{
+					id: 8,
+					title: 'Dual nav',
+					arrow: false,
+				},
+			],
 		},
 	],
 	itemsModules: [
