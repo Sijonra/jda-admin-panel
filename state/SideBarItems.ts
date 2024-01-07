@@ -2,6 +2,7 @@ import { TItem } from '@/types/types';
 import { create } from 'zustand';
 import SVG__HomeIcon from '@/public/assets/sideBarIcons/homeIcon.svg';
 import SVG__Cart from '@/public/assets/sideBarIcons/cart.svg';
+import SVG__Phone from '@/public/assets/sideBarIcons/phone.svg';
 
 interface ISideBarItems {
 	itemsHome: TItem[];
@@ -81,6 +82,56 @@ const sideBarItems = create<ISideBarItems>((set) => ({
 						'Order tracking',
 						'Invoice',
 					],
+				},
+			],
+		},
+		{
+			id: 1,
+			arrow: true,
+			title: 'CRM',
+			labelActive: true,
+			svg: SVG__Phone,
+			subItems: [
+				{
+					id: 0,
+					title: 'Analytics',
+					arrow: false,
+				},
+				{
+					id: 1,
+					title: 'Analytics',
+					arrow: false,
+					labelNew: true,
+				},
+				{
+					id: 2,
+					title: 'Analytics',
+					arrow: false,
+				},
+				{
+					id: 3,
+					title: 'Analytics',
+					arrow: false,
+				},
+				{
+					id: 4,
+					title: 'Analytics',
+					arrow: false,
+				},
+				{
+					id: 5,
+					title: 'Analytics',
+					arrow: false,
+				},
+				{
+					id: 6,
+					title: 'Analytics',
+					arrow: false,
+				},
+				{
+					id: 7,
+					title: 'Analytics',
+					arrow: false,
 				},
 			],
 		},
