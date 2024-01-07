@@ -16,9 +16,9 @@ interface ISideBarItem {
 	title: string;
 	withArrow: boolean;
 	icon: any;
-	subItems: TSubItem[] | false;
-	labelActive: boolean;
-	labelNew: boolean;
+	subItems: any;
+	labelActive: any;
+	labelNew: any;
 }
 
 const SideBarItem: FC<ISideBarItem> = ({
