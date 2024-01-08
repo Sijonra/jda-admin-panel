@@ -190,12 +190,16 @@ html[data-theme='dark']{
     --phoenix-kanban-column-hover-bg: #1c222c;
     --phoenix-leaflet-bar-bg: #373e53;
     --phoenix-leaflet-popup-content-wrapper-bg: #141824;
-
+    --phoenix-card-border-color: var(--phoenix-gray-200);
 
     --phoenix-badge-bg: rgba(var(--phoenix-info-rgb), 0.08);
     --phoenix-badge-color: #60c6ff;
     --phoenix-badge-border-color: rgba( var(--phoenix-info-rgb), 0.2 );
-
+	--phoenix-badge-chart-color: #ffcc85;
+	--phoenix-badge-chart-bg-color: #26262B;
+	--phoenix-badge-chart-border-color: #413A37;
+	--phoenix-badge-background-1: #85A9FF;
+	--phoenix-badge-background-2: #1D2332;
 
 
 }
@@ -456,17 +460,22 @@ html[data-theme='light']{
     --phoenix-ghost-bg: var(--phoenix-gray-100);
     --phoenix-drag-bg: var(--phoenix-white);
     --phoenix-kanban-column-hover-bg: var(--phoenix-white);
+	--phoenix-card-border-color: var(--phoenix-gray-200);
 
 	--bs-scrollbar-bg: #CACEDA;
 
 	--phoenix-badge-bg: rgba(var(--phoenix-info-rgb), 0.08);
     --phoenix-badge-color: #60c6ff;
     --phoenix-badge-border-color: rgba( var(--phoenix-info-rgb), 0.2 );
-
-
+	--phoenix-badge-chart-color: #bc3803;
+	--phoenix-badge-chart-bg-color: #FFEFCA;
+	--phoenix-badge-chart-border-color: #ffcc85;
 
 
     --phoenix-badge-bg: #c7ebff;
     --phoenix-badge-color: #005585;
     --phoenix-badge-border-color: #96d9ff;
+
+	--phoenix-badge-background-1: #3874FF;
+	--phoenix-badge-background-2: #E5EDFF;
 }

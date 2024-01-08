@@ -1,0 +1,113 @@
+@import '../../../styles/bundle.scss';
+
+.eccommerce-charts {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+.eccommerce-chart {
+	width: 50%;
+	max-width: 376px;
+	max-height: 294px;
+	padding: 24px;
+	background-color: var(--phoenix-white);
+	flex: 0 0 auto;
+	border: 1px solid var(--phoenix-card-border-color);
+	border-radius: calc(0.5rem - 1px);
+	margin: 0 8px 16px 8px;
+	overflow: hidden;
+
+	&-heading {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 4px;
+		@include font;
+
+		&__title {
+			display: flex;
+			align-items: center;
+			font-size: 16px;
+			line-height: 16px;
+			font-weight: 700;
+			color: var(--phoenix-1100);
+		}
+
+		&__subtitle {
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: 700;
+			margin-top: 4px;
+		}
+
+		&__label {
+			text-transform: uppercase;
+			padding: 2px 8px;
+			background-color: var(--phoenix-badge-chart-bg-color);
+			color: var(--phoenix-badge-chart-color);
+			border: 1px solid var(--phoenix-badge-chart-border-color);
+			border-radius: 50rem;
+			line-height: 12px;
+			font-size: 13px;
+			margin-left: 8px;
+		}
+
+		&__value {
+			font-size: 20px;
+			line-height: 20px;
+			font-weight: 700;
+			color: var(--phoenix-1100);
+			margin-bottom: 16px;
+		}
+	}
+
+	&-chart--1 {
+		width: 115px;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+
+	&-footer {
+		margin-top: 8px;
+		&__item {
+			display: flex;
+			align-items: center;
+
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+
+		&__label {
+			width: 16px;
+			height: 8px;
+			margin-right: 8px;
+			border-radius: 2px;
+
+			&--1 {
+				background-color: var(--phoenix-badge-background-1);
+			}
+			&--2 {
+				background-color: var(--phoenix-badge-background-2);
+			}
+		}
+
+		&__text {
+			@include font;
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: 600px;
+			color: var(--phoenix-900-rgb);
+			flex: 1;
+		}
+
+		&__value {
+			@include font;
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: 600px;
+			color: var(--phoenix-900-rgb);
+		}
+	}
+}
