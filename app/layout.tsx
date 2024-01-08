@@ -5,14 +5,23 @@ import './globals.scss';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'admin panel',
+	title: 'Phoenix',
 	description: 'jda-admin-panel',
+	metadataBase: new URL('https://jda-admin-panel.vercel.app/'),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html data-theme='dark' lang='en'>
 			<head>
+				<meta property='og:title' content='Phoenix' />
+				<meta property='og:description' content='jda-admin-panel' />
+				<meta property='og:image:alt' content='About Phoenix Panel' />
+				<meta
+					property='og:url'
+					content='https://prium.github.io/phoenix/v1.13.0/index.html'
+				/>
+
 				<link
 					rel='apple-touch-icon'
 					sizes='120x120'
