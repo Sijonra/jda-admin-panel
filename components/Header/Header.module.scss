@@ -25,6 +25,9 @@
 			font-weight: 600;
 			margin-left: 0.5rem;
 		}
+		@media (max-width: 990px) {
+			margin-right: 0;
+		}
 	}
 
 	&-burger {
