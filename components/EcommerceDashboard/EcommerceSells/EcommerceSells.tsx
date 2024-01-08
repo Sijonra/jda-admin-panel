@@ -163,6 +163,23 @@ const EcommerceSells: FC = () => {
 					</li>
 				</ul>
 			</div>
+			<div className={cx('sells')}>
+				<div className={cx('sells-heading')}>
+					<div className={cx('sells-heading__text')}>
+						<h2 className={cx('ecommerce-business__title', 'sells__title')}>
+							Total sells
+						</h2>
+						<h4 className={cx('ecommerce-business__subtitle')}>
+							Payment received across all channels
+						</h4>
+					</div>
+					<select name='' id='' className={cx('sells-heading__select')}>
+						<option value='Mar 1 - 31, 2022'>Mar 1 - 31, 2022</option>
+						<option value='April 1 - 30, 2022'>April 1 - 30, 2022</option>
+						<option value='May 1 - 31, 2022'>May 1 - 31, 2022</option>
+					</select>
+				</div>
+			</div>
 		</div>
 	);
 };
