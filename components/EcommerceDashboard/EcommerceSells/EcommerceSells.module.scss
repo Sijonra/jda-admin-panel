@@ -69,6 +69,34 @@
 			left: 0;
 			width: 40px;
 			height: 32px;
+
+			&--1 {
+				color: #42962d;
+			}
+			&--2 {
+				color: #8d6333;
+			}
+			&--3 {
+				color: #612017;
+			}
+
+			g {
+				transform: translate(224px, 256px);
+			}
+		}
+		.circle {
+			width: 40px;
+			height: 32px;
+
+			&--1 {
+				color: #134207;
+			}
+			&--2 {
+				color: #52310b;
+			}
+			&--3 {
+				color: #612017;
+			}
 		}
 	}
 

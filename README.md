@@ -28,6 +28,7 @@
       4.3[JDA-0403] TotalSales block layout
       4.4[JDA-0404] Graphics block layout
       4.5[JDA-0405] Responsive layout
+      4.6[JDA-0406] Customize graphics
 
 ## 5. Section Latest reviews layout
 
