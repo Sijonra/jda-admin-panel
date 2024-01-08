@@ -36,3 +36,11 @@
 ## 6. Section Top regions by revenue layout
 
 ## 7. Section porojection/returning graphics
+
+## 8. FavIocn
+
+      8.1[JDA-0801]: make site favicon
+
+## 9. GraphQl
+
+      9.1[JDA-0901]: make graph ql layout
