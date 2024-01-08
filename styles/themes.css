@@ -192,7 +192,6 @@ html[data-theme='dark']{
     --phoenix-leaflet-popup-content-wrapper-bg: #141824;
 
 
-
     --phoenix-badge-bg: rgba(var(--phoenix-info-rgb), 0.08);
     --phoenix-badge-color: #60c6ff;
     --phoenix-badge-border-color: rgba( var(--phoenix-info-rgb), 0.2 );
@@ -201,6 +200,7 @@ html[data-theme='dark']{
 
 }
 html[data-theme='light']{
+
 	--phoenix-gray-soft: #f5f7fa;
     --phoenix-gray-100: #eff2f6;
     --phoenix-gray-200: #e3e6ed;

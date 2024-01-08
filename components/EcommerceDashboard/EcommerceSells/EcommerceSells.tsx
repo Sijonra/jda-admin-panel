@@ -3,6 +3,7 @@
 import React, { FC } from 'react';
 import styles from './EcommerceSells.module.scss';
 import classNames from 'classnames/bind';
+import SellsChart from './SellsChart/SellsChart';
 
 const cx = classNames.bind(styles);
 
@@ -169,7 +170,11 @@ const EcommerceSells: FC = () => {
 						<h2 className={cx('ecommerce-business__title', 'sells__title')}>
 							Total sells
 						</h2>
-						<h4 className={cx('ecommerce-business__subtitle')}>
+						<h4
+							className={cx(
+								'ecommerce-business__subtitle',
+								'sells__subtitle'
+							)}>
 							Payment received across all channels
 						</h4>
 					</div>
@@ -178,6 +183,9 @@ const EcommerceSells: FC = () => {
 						<option value='April 1 - 30, 2022'>April 1 - 30, 2022</option>
 						<option value='May 1 - 31, 2022'>May 1 - 31, 2022</option>
 					</select>
+				</div>
+				<div className={cx('sells-charts')}>
+					<SellsChart />
 				</div>
 			</div>
 		</div>

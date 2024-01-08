@@ -22,7 +22,7 @@
 		font-weight: 600;
 		line-height: 16px;
 		color: var(--phoenix-700-rgb);
-		opacity: 0.85;
+		opacity: 0.9;
 	}
 
 	&::after {
@@ -89,6 +89,7 @@
 		font-size: 13px;
 		font-weight: 600;
 		line-height: 19px;
+		margin-bottom: 30px;
 
 		&__select {
 			font-size: 13px;
@@ -128,5 +129,14 @@
 	&__subtitle {
 		font-weight: 400;
 		line-height: 19px;
+	}
+}
+
+.sells-charts {
+	min-height: 330px;
+	width: 100%;
+	canvas {
+		@include font;
+		padding-left: 4px !important;
 	}
 }
