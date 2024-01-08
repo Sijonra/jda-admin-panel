@@ -19,7 +19,7 @@ const EcommerceSells: FC = () => {
 					<li>
 						<div className={cx('business-list__icons')}>
 							<svg
-								className={cx('folder')}
+								className={cx('folder', 'folder--1')}
 								data-fa-transform='down-4 rotate--10 left-4'
 								aria-hidden='true'
 								focusable='false'
@@ -39,7 +39,7 @@ const EcommerceSells: FC = () => {
 								</g>
 							</svg>
 							<svg
-								className={cx('circle')}
+								className={cx('circle', 'circle--1')}
 								data-fa-transform='up-4 right-3 grow-2'
 								aria-hidden='true'
 								focusable='false'
@@ -69,7 +69,7 @@ const EcommerceSells: FC = () => {
 					<li>
 						<div className={cx('business-list__icons')}>
 							<svg
-								className={cx('folder')}
+								className={cx('folder', 'folder--2')}
 								data-fa-transform='down-4 rotate--10 left-4'
 								aria-hidden='true'
 								focusable='false'
@@ -89,7 +89,7 @@ const EcommerceSells: FC = () => {
 								</g>
 							</svg>
 							<svg
-								className={cx('circle')}
+								className={cx('circle', 'circle--2')}
 								data-fa-transform='up-4 right-3 grow-2'
 								aria-hidden='true'
 								focusable='false'
@@ -117,7 +117,7 @@ const EcommerceSells: FC = () => {
 					<li>
 						<div className={cx('business-list__icons')}>
 							<svg
-								className={cx('folder')}
+								className={cx('folder', 'folder--3')}
 								data-fa-transform='down-4 rotate--10 left-4'
 								aria-hidden='true'
 								focusable='false'
@@ -137,7 +137,7 @@ const EcommerceSells: FC = () => {
 								</g>
 							</svg>
 							<svg
-								className={cx('circle')}
+								className={cx('circle', 'circle--3')}
 								data-fa-transform='up-4 right-3 grow-2'
 								aria-hidden='true'
 								focusable='false'
