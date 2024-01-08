@@ -43,4 +43,4 @@
 
 ## 9. GraphQl
 
-      9.1[JDA-0901]: make graph ql layout
+      9.1[JDA-0901]: make open graph layout
