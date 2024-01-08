@@ -27,11 +27,9 @@
       4.2[JDA-0402] YourBusiness block layout
       4.3[JDA-0403] TotalSales block layout
       4.4[JDA-0404] Graphics block layout
+      4.5[JDA-0405] Responsive layout
 
 ## 5. Section Latest reviews layout
-
-      5.1[JDA-0501] add checkbox and "No Posts" message to post page
-      5.2[JDA-0502] styling posts page
 
 ## 6. Section Top regions by revenue layout
 

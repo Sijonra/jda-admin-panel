@@ -1,3 +1,7 @@
 .ecommerce {
 	display: flex;
+
+	@media (max-width: 1400px) {
+		flex-direction: column;
+	}
 }
