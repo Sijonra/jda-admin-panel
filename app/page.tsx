@@ -15,7 +15,6 @@ export default function Home() {
 			<SideBar />
 			<main className={cx('main')}>
 				<Ecommerce />
-				<Ecommerce />
 			</main>
 			<Footer />
 		</div>

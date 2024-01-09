@@ -17,6 +17,9 @@ const ChardOrders = () => {
 			axisTick: {
 				show: false,
 			},
+			axisPointer: {
+				type: 'none',
+			},
 		},
 		yAxis: {
 			type: 'value',
@@ -43,6 +46,10 @@ const ChardOrders = () => {
 				itemStyle: {
 					color: theme === 'dark' ? '#85A9FF' : '#3C7EFF',
 					barBorderRadius: [5, 5, 5, 5],
+				},
+				backgroundStyle: {
+					borderRadius: 10,
+					color: theme === 'dark' ? '#1d2332' : '#e5edff',
 				},
 			},
 		],
