@@ -17,6 +17,9 @@ const ChardOrders = () => {
 			axisTick: {
 				show: false,
 			},
+			axisPointer: {
+				type: 'none',
+			},
 		},
 		yAxis: {
 			type: 'value',

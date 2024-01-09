@@ -6,7 +6,7 @@ const SellsChart = () => {
 
 	const option = {
 		grid: {
-			left: 0,
+			left: 22,
 			right: 1,
 			top: 2,
 			bottom: 0,
@@ -31,9 +31,16 @@ const SellsChart = () => {
 			axisLabel: {
 				interval: 13,
 				textStyle: {
-					color: theme === 'dark' ? '#6D7488' : '#485165',
+					color: theme === 'dark' ? '#9fa6bc' : '#31374a',
 					fontSize: 12,
+					fontWeight: 400,
 				},
+			},
+			axisPointer: {
+				type: 'none',
+			},
+			axisTick: {
+				show: false,
 			},
 			data: [
 				'01 May',
@@ -78,6 +85,7 @@ const SellsChart = () => {
 		},
 		series: [
 			{
+				name: 'May',
 				symbol: 'none',
 				data: [
 					[0, 100],
@@ -121,6 +129,7 @@ const SellsChart = () => {
 				},
 			},
 			{
+				name: 'April',
 				markLine: {
 					symbol: ['none', 'none'],
 					label: { show: false },
