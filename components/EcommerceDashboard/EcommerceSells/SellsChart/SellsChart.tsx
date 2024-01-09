@@ -6,7 +6,7 @@ const SellsChart = () => {
 
 	const option = {
 		grid: {
-			left: 22,
+			left: 0,
 			right: 1,
 			top: 2,
 			bottom: 0,
