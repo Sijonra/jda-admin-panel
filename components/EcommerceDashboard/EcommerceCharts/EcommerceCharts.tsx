@@ -6,6 +6,7 @@ import classNames from 'classnames/bind';
 import ChardOrders from './Charts/ChartOrders';
 import ChartCustomers from './Charts/ChartCustomers';
 import ChartCoupons from './Charts/ChartCoupons';
+import ChartPaying from './Charts/ChartPaying';
 
 const cx = classNames.bind(styles);
 
@@ -138,8 +139,8 @@ const EcommerceCharts: FC = () => {
 						</p>
 					</div>
 				</div>
-				<div className={cx('eccommerce-chart-chart--1')}>
-					<ChardOrders />
+				<div className={cx('eccommerce-chart-chart--4')}>
+					<ChartPaying />
 				</div>
 				<div className={cx('eccommerce-chart-footer')}>
 					<div className={cx('eccommerce-chart-footer__item')}>
