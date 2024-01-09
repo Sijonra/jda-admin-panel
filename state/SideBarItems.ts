@@ -1,40 +1,77 @@
 import { TItem } from '@/types/types';
 import { create } from 'zustand';
+
+// @ts-ignore
 import SVG__HomeIcon from '@/public/assets/sideBarIcons/homeIcon.svg?url';
+// @ts-ignore
 import SVG__Cart from '@/public/assets/sideBarIcons/cart.svg?url';
+// @ts-ignore
 import SVG__Phone from '@/public/assets/sideBarIcons/phone.svg?url';
+// @ts-ignore
 import SVG__Board from '@/public/assets/sideBarIcons/board.svg?url';
+// @ts-ignore
 import SVG__Chat from '@/public/assets/sideBarIcons/chat.svg?url';
+// @ts-ignore
 import SVG__Email from '@/public/assets/sideBarIcons/mail.svg?url';
+// @ts-ignore
 import SVG__Events from '@/public/assets/sideBarIcons/events.svg?url';
+// @ts-ignore
 import SVG__Kanban from '@/public/assets/sideBarIcons/canban.svg?url';
+// @ts-ignore
 import SVG__Social from '@/public/assets/sideBarIcons/social.svg?url';
+// @ts-ignore
 import SVG__Calendar from '@/public/assets/sideBarIcons/calendar.svg?url';
+// @ts-ignore
 import SVG__Starters from '@/public/assets/sideBarIcons/starter.svg?url';
+// @ts-ignore
 import SVG__Faq from '@/public/assets/sideBarIcons/faq.svg?url';
+// @ts-ignore
 import SVG__Forms from '@/public/assets/sideBarIcons/forms.svg?url';
+// @ts-ignore
 import SVG__Icons from '@/public/assets/sideBarIcons/icons.svg?url';
+// @ts-ignore
 import SVG__Tables from '@/public/assets/sideBarIcons/tables.svg?url';
+// @ts-ignore
 import SVG__Echarts from '@/public/assets/sideBarIcons/echarts.svg?url';
+// @ts-ignore
 import SVG__Components from '@/public/assets/sideBarIcons/components.svg?url';
+// @ts-ignore
 import SVG__Utilities from '@/public/assets/sideBarIcons/utilities.svg?url';
+// @ts-ignore
 import SVG__Widgets from '@/public/assets/sideBarIcons/widgets.svg?url';
+// @ts-ignore
 import SVG__Multilevel from '@/public/assets/sideBarIcons/multilevel.svg?url';
+// @ts-ignore
 import SVG__GettingStarted from '@/public/assets/sideBarIcons/gettingstarted.svg?url';
+// @ts-ignore
 import SVG__Customization from '@/public/assets/sideBarIcons/customization.svg?url';
+// @ts-ignore
 import SVG__Layout from '@/public/assets/sideBarIcons/layoutdoc.svg?url';
+// @ts-ignore
 import SVG__Gulp from '@/public/assets/sideBarIcons/gulp.svg?url';
+// @ts-ignore
 import SVG__Design from '@/public/assets/sideBarIcons/designe.svg?url';
+// @ts-ignore
 import SVG__Changelog from '@/public/assets/sideBarIcons/changelog.svg?url';
+// @ts-ignore
 import SVG__Showcase from '@/public/assets/sideBarIcons/showcase.svg?url';
+// @ts-ignore
 import SVG__Landing from '@/public/assets/sideBarIcons/landing.svg?url';
+// @ts-ignore
 import SVG__Pricing from '@/public/assets/sideBarIcons/pricing.svg?url';
+// @ts-ignore
 import SVG__Notification from '@/public/assets/sideBarIcons/notifications.svg?url';
+// @ts-ignore
 import SVG__Members from '@/public/assets/sideBarIcons/members.svg?url';
+// @ts-ignore
 import SVG__Timeline from '@/public/assets/sideBarIcons/timeline.svg?url';
+// @ts-ignore
 import SVG__Errors from '@/public/assets/sideBarIcons/errors.svg?url';
+// @ts-ignore
 import SVG__Authentication from '@/public/assets/sideBarIcons/authentication.svg?url';
+// @ts-ignore
 import SVG__Layouts from '@/public/assets/sideBarIcons/layout.svg?url';
+// @ts-ignore
 
 interface ISideBarItems {
 	itemsHome: TItem[];
