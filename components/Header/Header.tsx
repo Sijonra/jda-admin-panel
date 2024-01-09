@@ -56,7 +56,7 @@ const Header: FC = () => {
 				<li
 					onClick={onThemeChange}
 					className={cx('header-icons__item', 'header-icons__theme')}>
-					<a href='/#'>
+					<div>
 						{theme === 'dark' ? (
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -92,7 +92,7 @@ const Header: FC = () => {
 								<line x1='18.36' y1='5.64' x2='19.78' y2='4.22'></line>
 							</svg>
 						)}
-					</a>
+					</div>
 				</li>
 				<li className={cx('header-icons__item', 'header-icons__ring')}>
 					<a href='/#'>
