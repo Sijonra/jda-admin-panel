@@ -8,6 +8,8 @@ import SVGSearch from '@/public/assets/common/search.svg';
 import SVGArrowDownUp from '@/public/assets/common/arrowUpDown.svg';
 import ReviewItem from './ReviewItem/ReviewItem';
 
+import { reviewItemsData } from './reviews.data';
+
 const cx = classNames.bind(styles);
 
 const Reviews = () => {
@@ -69,7 +71,20 @@ const Reviews = () => {
 				</p>
 			</div>
 			<div className={cx('review-items')}>
-				<ReviewItem />
+				{reviewItemsData.map((item) => {
+					return (
+						<ReviewItem
+							key={item.id}
+							image={item.image}
+							title={item.title}
+							avatar={item.avatar}
+							name={item.name}
+							rating={item.rating}
+							text={item.text}
+							badge={item.badge}
+						/>
+					);
+				})}
 			</div>
 		</section>
 	);
