@@ -33,11 +33,10 @@
 
 ## 5. Section Latest reviews layout
 
-      5.1[JDA-0501] create LatestReview heading layout
-      5.2[JDA-0502] create review-filter-controls layout
-      5.3[JDA-0503] crete review layout
-      5.4[JDA-0504] storing reviews props adn rendering reviews
-      5.5[JDA-0505] adaptive
+      5.1[JDA-0501] create LatestReview heading && review-filter-controls layout
+      5.2[JDA-0502] crete review layout
+      5.3[JDA-0503] storing reviews props adn rendering reviews
+      5.4[JDA-0504] adaptive
 
 ## 6. Section Top regions by revenue layout
 

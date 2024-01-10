@@ -5,12 +5,13 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import SVGPoints from '@/public/assets/Reviews/threepoints.svg';
 import SVGSearch from '@/public/assets/common/search.svg';
+import SVGArrowDownUp from '@/public/assets/common/arrowUpDown.svg';
 
 const cx = classNames.bind(styles);
 
 const Reviews = () => {
 	return (
-		<section className={cx('reviews')}>
+		<section className={cx('section-reviews')}>
 			<div className={cx('reviews-heading')}>
 				<div className={cx('reviews-heading__title')}>
 					<h4>Latest reviews</h4>
@@ -36,6 +37,35 @@ const Reviews = () => {
 						<SVGPoints />
 					</button>
 				</div>
+			</div>
+			<div className={cx('reviews-sorting-controls')}>
+				<div className={cx('checkbox')}>
+					<input type='checkbox' className={cx('checkbox__item')} />
+				</div>
+				<p className={cx('product')}>
+					Product
+					<SVGArrowDownUp />
+				</p>
+				<p className={cx('customer')}>
+					Customer
+					<SVGArrowDownUp />
+				</p>
+				<p className={cx('rating')}>
+					Rating
+					<SVGArrowDownUp />
+				</p>
+				<p className={cx('review')}>
+					Review
+					<SVGArrowDownUp />
+				</p>
+				<p className={cx('status')}>
+					Status
+					<SVGArrowDownUp />
+				</p>
+				<p className={'time'}>
+					time
+					<SVGArrowDownUp />
+				</p>
 			</div>
 		</section>
 	);
