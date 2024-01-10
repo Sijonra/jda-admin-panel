@@ -6,6 +6,7 @@ import classNames from 'classnames/bind';
 import SVGPoints from '@/public/assets/Reviews/threepoints.svg';
 import SVGSearch from '@/public/assets/common/search.svg';
 import SVGArrowDownUp from '@/public/assets/common/arrowUpDown.svg';
+import SVGArrowRight from '@/public/assets/Reviews/arroright.svg';
 import ReviewItem from './ReviewItem/ReviewItem';
 
 import { reviewItemsData } from './reviews.data';
@@ -85,6 +86,24 @@ const Reviews = () => {
 						/>
 					);
 				})}
+			</div>
+			<div className={cx('reviews-footer')}>
+				<div className={cx('reviews-footer__page')}>
+					1 to 6 Items of 15
+					<div className={cx('reviews-footer__button--all')}>
+						<span>View all </span> <SVGArrowRight />{' '}
+					</div>
+				</div>
+				<div className={cx('reviews-footer-buttons')}>
+					<div className={cx('reviews-footer__button--prev')}>
+						<SVGArrowRight />
+						<span>Previous</span>
+					</div>
+					<div className={cx('reviews-footer__button--next')}>
+						<span>Next</span>
+						<SVGArrowRight />
+					</div>
+				</div>
 			</div>
 		</section>
 	);
