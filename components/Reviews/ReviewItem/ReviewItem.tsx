@@ -7,6 +7,7 @@ import SVGPoints from '@/public/assets/Reviews/threepoints.svg';
 import SVGStarEmpty from '@/public/assets/common/starEmpty.svg';
 import LabelApproved from '@/components/common/LabelApproved/LabelApproved';
 import LabelPending from '@/components/common/LabelApproved/LabelPending';
+import SVGChecked from '@/public/assets/common/checked.svg';
 
 const cx = classNames.bind(styles);
 
@@ -70,7 +71,9 @@ const ReviewItem: FC<IReviewItem> = ({
 				{badge === 'approved' ? <LabelApproved /> : <LabelPending />}
 			</div>
 			<div className={cx('review-time')}>
-				<div className={cx('review-time__accept')}></div>
+				<div className={cx('review-time__accept')}>
+					<SVGChecked />
+				</div>
 				<div className={cx('review-time__delete')}></div>
 				<div className={cx('review-time__label')}>Just now</div>
 				<div className={cx('review-time__button-points')}>
