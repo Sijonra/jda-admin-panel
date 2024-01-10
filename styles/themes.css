@@ -202,7 +202,12 @@ html[data-theme='dark']{
 	--phoenix-badge-background-2: #1D2332;
 	--phoenix-btn-border-color: #31374a;
 	--phoenix-table-border-color: #31374A;
-
+	--phoenix-label-approved-bg: #1D272B;
+	--phoenix-label-approved-border: #224722;
+	--phoenix-badge-color-approved: #90d67f;
+	--phoenix-badge-pending-bg: #26262B;
+	--phoenix-badge-color-pending: #FFC480;
+	--phoenix-badge-border-color: #ffcc85;
 
 }
 html[data-theme='light']{
@@ -482,4 +487,10 @@ html[data-theme='light']{
 	--phoenix-badge-background-2: #E5EDFF;
 	--phoenix-btn-border-color:#e3e6ed;
 	--phoenix-table-border-color: #E3E6ED;
+	--phoenix-label-approved-bg: #D9FBD0;
+	--phoenix-label-approved-border: #bee8b4;
+	--phoenix-badge-color-approved: #1c6c09;
+	--phoenix-badge-pending-bg: #ffefca;
+	--phoenix-badge-color-pending: #bc3803;
+	--phoenix-badge-border-color: #ffcc85;
 }

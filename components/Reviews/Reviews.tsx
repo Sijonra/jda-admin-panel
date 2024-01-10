@@ -6,6 +6,7 @@ import classNames from 'classnames/bind';
 import SVGPoints from '@/public/assets/Reviews/threepoints.svg';
 import SVGSearch from '@/public/assets/common/search.svg';
 import SVGArrowDownUp from '@/public/assets/common/arrowUpDown.svg';
+import ReviewItem from './ReviewItem/ReviewItem';
 
 const cx = classNames.bind(styles);
 
@@ -66,6 +67,9 @@ const Reviews = () => {
 					time
 					<SVGArrowDownUp />
 				</p>
+			</div>
+			<div className={cx('review-items')}>
+				<ReviewItem />
 			</div>
 		</section>
 	);
