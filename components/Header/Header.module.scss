@@ -144,6 +144,7 @@
 			background-color: var(--phoenix-theme-control-toggle-bg);
 			color: var(--phoenix-theme-control-toggle-color);
 			border-radius: 50%;
+			cursor: pointer;
 
 			&:hover {
 				background-color: var(--phoenix-theme-control-toggle-hover-bg);

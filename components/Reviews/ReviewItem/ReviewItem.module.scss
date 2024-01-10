@@ -145,8 +145,14 @@
 			color: rgba(var(--phoenix-1000-rgb));
 		}
 		&__button-points {
-			width: 9px;
+			width: 42px;
+			height: 30px;
+			padding: 8px 16px;
 			margin-left: 16px;
+
+			svg {
+				width: 9px;
+			}
 		}
 
 		&:hover {
