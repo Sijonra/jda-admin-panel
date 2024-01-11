@@ -1,6 +1,8 @@
 @import '../../styles/bundle.scss';
 
 .regions {
+	display: flex;
+
 	&-heading {
 		margin-top: 48px;
 		margin-bottom: 32px;
@@ -34,6 +36,10 @@
 .regions-left {
 	width: 50%;
 	padding-right: 20px;
+}
+
+.regions-right {
+	width: 50%;
 }
 
 .regions-footer {

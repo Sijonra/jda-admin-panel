@@ -5,6 +5,7 @@ import SVGArrowDownUp from '@/public/assets/common/arrowUpDown.svg';
 import SVGArrowRight from '@/public/assets/Reviews/arroright.svg';
 import RegionTableItem from './RegionItem/RegionItem';
 import { regionsData } from './regions.data';
+import RegionsMap from './RegionsMap/RegionsMap';
 
 const cx = classNames.bind(styles);
 
@@ -67,6 +68,9 @@ const Regions: FC = () => {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className={cx('regions-right')}>
+				<RegionsMap />
 			</div>
 		</section>
 	);
