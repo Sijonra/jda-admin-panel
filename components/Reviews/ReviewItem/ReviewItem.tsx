@@ -41,7 +41,7 @@ const ReviewItem: FC<IReviewItem> = ({
 		}
 		for (let i = rating; i < 5; i++) {
 			stars.push(
-				<div key={i} className={cx('review-stars__star')}>
+				<div key={i + 1} className={cx('review-stars__star')}>
 					<SVGStarEmpty />
 				</div>
 			);

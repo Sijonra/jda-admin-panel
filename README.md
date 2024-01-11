@@ -45,6 +45,8 @@
 
 ## 7. Section porojection/returning graphics
 
+      7.1[JDA-0701] Projection/customer section and charts layout
+
 ## 8. FavIocn
 
       8.1[JDA-0801]: make site favicon

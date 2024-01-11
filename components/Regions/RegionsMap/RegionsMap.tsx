@@ -1,13 +1,10 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import './RegionsMap.scss';
 import 'react-leaflet';
-import 'leaflet-defaulticon-compatibility';
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
-import { Icon } from 'leaflet';
 import useTheme from '@/hooks/useTheme';
 import { leaftletPoints } from './MapPoints.data';
 import MarkerClusterGroup from 'react-leaflet-cluster';
@@ -15,13 +12,8 @@ import MarkerClusterGroup from 'react-leaflet-cluster';
 const RegionsMap = () => {
 	const theme = useTheme((state) => state.theme);
 
-	const customIcon = new Icon({
-		iconUrl: 'https://icons8.com/icon/3771/place-marker',
-		iconSize: [38, 38],
-	});
-
 	const markers = leaftletPoints.map((point, index) => (
-		<Marker key={index} icon={customIcon} position={[point.lat, point.long]}>
+		<Marker key={index} position={[point.lat, point.long]}>
 			<Popup>
 				<div>
 					<h6 className='mb-1'>{point.name}</h6>
@@ -40,7 +32,7 @@ const RegionsMap = () => {
 	const tileLayerUrl = theme === 'dark' ? darkThemeUrl : lightThemeUrl;
 
 	return (
-		<MapContainer center={[25.659195, 30.182691]} zoom={2} scrollWheelZoom={true}>
+		<MapContainer center={[50.4501, 30.5234]} zoom={3} scrollWheelZoom={true}>
 			<TileLayer
 				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 				url={tileLayerUrl}
