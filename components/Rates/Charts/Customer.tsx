@@ -88,6 +88,7 @@ const Customer = () => {
 				lineStyle: {
 					color: theme === 'dark' ? '#9fa6bc' : '#31374a',
 					type: 'dashed',
+					width: 0.5,
 				},
 			},
 		},
@@ -105,7 +106,10 @@ const Customer = () => {
 			},
 			splitLine: {
 				show: true,
-				lineStyle: { color: theme === 'dark' ? '#9fa6bc' : '#31374a' },
+				lineStyle: {
+					color: theme === 'dark' ? '#9fa6bc' : '#31374a',
+					width: 0.3,
+				},
 			},
 		},
 		series: [
@@ -124,7 +128,7 @@ const Customer = () => {
 				lineStyle: {
 					type: 'dashed',
 					width: 1,
-					color: theme === 'dark' ? '#373e53' : '#cbd0dd',
+					color: theme === 'dark' ? '#92B9FF' : '#cbd0dd',
 				},
 				itemStyle: {
 					borderColor: theme === 'dark' ? '#373e53' : '#cbd0dd',
@@ -145,7 +149,7 @@ const Customer = () => {
 				},
 				lineStyle: {
 					width: 1,
-					color: theme === 'dark' ? '#9fa6bc' : '#31374a',
+					color: theme === 'dark' ? '#96D9FF' : '#96D9FF',
 				},
 				itemStyle: {
 					borderColor: theme === 'dark' ? '#9fa6bc' : '#31374a',
@@ -166,7 +170,7 @@ const Customer = () => {
 				},
 				lineStyle: {
 					width: 3,
-					color: theme === 'dark' ? '#3874ff' : '#85a9ff',
+					color: theme === 'dark' ? '#85A9FF' : '#3874FF',
 				},
 				itemStyle: {
 					borderColor: theme === 'dark' ? '#3874ff' : '#85a9ff',
