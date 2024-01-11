@@ -40,6 +40,9 @@
 
 ## 6. Section Top regions by revenue layout
 
+      6.1[JDA-0601] Regions Table layout
+      6.2[JDA-0602] Regions Map
+
 ## 7. Section porojection/returning graphics
 
 ## 8. FavIocn
