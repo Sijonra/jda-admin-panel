@@ -209,6 +209,7 @@ html[data-theme='dark']{
 	--phoenix-badge-color-pending: #FFC480;
 	--phoenix-badge-border-color1: #ffcc85;
 	--phoenix-btn-color: #85a9ff;
+	--phoenix-btn-disabled-color: #9fa6bc;
 
 }
 html[data-theme='light']{
@@ -495,4 +496,5 @@ html[data-theme='light']{
 	--phoenix-badge-color-pending: #bc3803;
 	--phoenix-badge-border-color1: #ffcc85;
 	--phoenix-btn-color: #3874ff;
+	--phoenix-btn-disabled-color: #9fa6bc;
 }
