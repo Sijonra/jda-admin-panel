@@ -1,8 +1,6 @@
 @import '../../styles/bundle.scss';
 
 .regions {
-	// margin-right: -40px;
-
 	&-heading {
 		margin-top: 48px;
 		margin-bottom: 32px;
@@ -35,5 +33,69 @@
 
 .regions-left {
 	width: 50%;
-	padding-right: 40px;
+	padding-right: 20px;
+}
+
+.regions-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid var(--phoenix-gray-200);
+	height: 45px;
+
+	&__value {
+		@include font;
+		font-size: 13px;
+		line-height: 19px;
+		font-weight: 600;
+	}
+
+	&-buttons {
+		display: flex;
+		align-items: center;
+	}
+
+	&__button {
+		&--prev {
+			@include font;
+			font-size: 13px;
+			line-height: 24px;
+			font-weight: 400;
+			color: var(--phoenix-btn-disabled-color);
+			display: flex;
+			align-items: center;
+			margin-right: 16px;
+
+			svg {
+				color: var(--phoenix-btn-disabled-color);
+				width: 8px;
+				height: 13px;
+				transform: rotate(-180deg);
+				margin-right: 8px;
+			}
+		}
+		&--next {
+			@include font;
+			font-size: 13px;
+			line-height: 24px;
+			font-weight: 400;
+			color: var(--phoenix-btn-color);
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+
+			&:hover {
+				color: var(--phoenix-link-hover-color);
+				text-decoration: underline;
+			}
+
+			svg {
+				color: var(--phoenix-btn-color);
+				width: 8px;
+				height: 13px;
+				margin-left: 8px;
+				margin-bottom: 2px;
+			}
+		}
+	}
 }

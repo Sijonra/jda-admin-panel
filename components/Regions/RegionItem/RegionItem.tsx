@@ -8,7 +8,8 @@ const cx = classNames.bind(styles);
 
 interface IRegionTableItem {
 	id: number;
-	isTableControl: boolean;
+	isTotal?: boolean;
+	isTableControl?: boolean;
 	countryImg: string | StaticImageData;
 	countryName: string;
 	users: { value: string; percents: string };
@@ -19,6 +20,7 @@ interface IRegionTableItem {
 
 const RegionTableItem: FC<IRegionTableItem> = ({
 	isTableControl,
+	isTotal,
 	id,
 	countryImg,
 	countryName,
@@ -39,7 +41,12 @@ const RegionTableItem: FC<IRegionTableItem> = ({
 		);
 
 	return (
-		<div className={cx('table-row', isTableControl && 'table-row-controls')}>
+		<div
+			className={cx(
+				'table-row',
+				isTableControl && 'table-row-controls',
+				isTotal && 'table-row-total'
+			)}>
 			<div className={cx('table-row__item', 'table-row__item--1')}>
 				{countryContent} <SVGArrowDownUp />
 			</div>
