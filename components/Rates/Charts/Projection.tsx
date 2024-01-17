@@ -103,7 +103,6 @@ const Projection = () => {
 			right: 0,
 			left: 3,
 			bottom: 0,
-			top: 40,
 			width: 741,
 			height: 300,
 			containLabel: true,
@@ -111,7 +110,7 @@ const Projection = () => {
 		animation: false,
 	};
 
-	return <Echart style={{ height: '340px', width: '741px' }} option={option} />;
+	return <Echart style={{ height: '300px' }} option={option} />;
 };
 
 export default Projection;
