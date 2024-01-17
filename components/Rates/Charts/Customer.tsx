@@ -181,7 +181,7 @@ const Customer = () => {
 		grid: { left: 0, right: 8, bottom: 0, containLabel: true },
 	};
 
-	return <Echart style={{ height: '300px', width: '765px' }} option={option} />;
+	return <Echart style={{ height: '300px' }} option={option} />;
 };
 
 export default Customer;

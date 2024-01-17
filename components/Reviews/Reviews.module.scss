@@ -7,6 +7,10 @@
 	border-top: 1px solid var(--phoenix-gray-200);
 	border-bottom: 1px solid var(--phoenix-gray-200);
 	background-color: rgba(var(--phoenix-white-rgb));
+
+	@media (max-width: 1400px) {
+		display: none;
+	}
 }
 
 .reviews-heading {
