@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import './RegionsMap.scss';
 import 'react-leaflet';
@@ -8,6 +6,8 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import useTheme from '@/hooks/useTheme';
 import { leaftletPoints } from './MapPoints.data';
 import MarkerClusterGroup from 'react-leaflet-cluster';
+import 'leaflet-defaulticon-compatibility';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 
 const RegionsMap = () => {
 	const theme = useTheme((state) => state.theme);

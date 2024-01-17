@@ -1,15 +1,25 @@
-import React, { FC } from 'react';
+'use client';
+
+import React, { FC, useMemo } from 'react';
 import styles from './Regions.module.scss';
 import classNames from 'classnames/bind';
-import SVGArrowDownUp from '@/public/assets/common/arrowUpDown.svg';
 import SVGArrowRight from '@/public/assets/Reviews/arroright.svg';
 import RegionTableItem from './RegionItem/RegionItem';
 import { regionsData } from './regions.data';
-import RegionsMap from './RegionsMap/RegionsMap';
+import dynamic from 'next/dynamic';
 
 const cx = classNames.bind(styles);
 
 const Regions: FC = () => {
+	const Map = useMemo(
+		() =>
+			dynamic(() => import('@/components/Regions/RegionsMap/RegionsMap'), {
+				loading: () => <p>A map is loading</p>,
+				ssr: false,
+			}),
+		[]
+	);
+
 	return (
 		<section className={cx('regions')}>
 			<div className={cx('regions-left')}>
@@ -70,7 +80,7 @@ const Regions: FC = () => {
 				</div>
 			</div>
 			<div className={cx('regions-right')}>
-				<RegionsMap />
+				<Map />
 			</div>
 		</section>
 	);
