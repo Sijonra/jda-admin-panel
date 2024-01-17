@@ -5,7 +5,9 @@ import styles from './EcommerceSells.module.scss';
 import classNames from 'classnames/bind';
 import SellsChart from './SellsChart/SellsChart';
 
-import SVGFolder from '@/public/assets/EcommerceSellsSVG/folder.svg';
+import SVGStar from '@/public/assets/DashboardImg/sellsImages/star.svg';
+import SVGPause from '@/public/assets/DashboardImg/sellsImages/pause.svg';
+import SVGCross from '@/public/assets/DashboardImg/sellsImages/cross.svg';
 
 const cx = classNames.bind(styles);
 
@@ -19,7 +21,9 @@ const EcommerceSells: FC = () => {
 				</h4>
 				<ul className={cx('business-list')}>
 					<li>
-						<div className={cx('business-list__icons')}></div>
+						<div className={cx('business-list__icons')}>
+							<SVGStar />
+						</div>
 						<div>
 							<h5 className={cx('business-list__title')}>57 new orders</h5>
 							<p className={cx('business-list__subtitle')}>
@@ -28,14 +32,18 @@ const EcommerceSells: FC = () => {
 						</div>
 					</li>
 					<li>
-						<div className={cx('business-list__icons')}></div>
+						<div className={cx('business-list__icons')}>
+							<SVGPause />
+						</div>
 						<div>
 							<h5 className={cx('business-list__title')}>5 orders</h5>
 							<p className={cx('business-list__subtitle')}>On hold</p>
 						</div>
 					</li>
 					<li>
-						<div className={cx('business-list__icons')}></div>
+						<div className={cx('business-list__icons')}>
+							<SVGCross />
+						</div>
 						<div>
 							<h5 className={cx('business-list__title')}>15 products</h5>
 							<p className={cx('business-list__subtitle')}>Out of stock</p>

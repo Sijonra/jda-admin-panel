@@ -20,11 +20,4 @@ export const leaftletPoints = [
 		lat: 48.4713393,
 		long: 38.8134407,
 	},
-	{
-		name: 'Луганськ',
-		location: 'Україна',
-		street: 'Дарова',
-		lat: 43.2565,
-		long: 76.9286,
-	},
 ];
